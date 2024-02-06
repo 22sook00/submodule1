@@ -10,7 +10,13 @@ const Button = () => {
           onClick={() => setCount(count + 1)}
           className="rounded-md px-4 py-2 text-white font-semibold bg-[#334155]"
         >
-          COMMON BUTTON
+          PLUS BUTTON
+        </button>
+        <button
+          onClick={() => setCount(count > 0 ? count - 1 : 0)}
+          className="rounded-md px-4 py-2 text-white font-semibold bg-[#334155]"
+        >
+          MINUS BUTTON
         </button>
         <button
           onClick={() => setCount(0)}
